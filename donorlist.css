@@ -1,0 +1,189 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.search-container select, 
+.search-container button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+/* Container Styling */
+.results-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Donor List */
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Request Card Styling */
+.request-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.request-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Request Details Section */
+.request-details {
+    flex: 1; /* Allows it to take remaining space */
+    margin-right: 20px; /* Adds space between details and the action section */
+}
+
+.request-details h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.request-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+}
+
+.request-details p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Action Section */
+.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns content to the right */
+    min-width: 150px; /* Ensures the right section doesn’t collapse */
+}
+
+.action-section .btn-request {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.action-section .btn-request:hover {
+    background-color: #444;
+}
+
+/* Table Styling */
+.summary-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #summaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #summaryTable th, #summaryTable td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  #summaryTable th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #summaryTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #summaryTable tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 20px;
+    }
+
+    .request-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .request-details {
+        margin-right: 0; /* Remove unnecessary space in mobile view */
+        margin-bottom: 10px; /* Add spacing between sections */
+    }
+
+    .action-section {
+        align-items: flex-start;
+        min-width: auto; /* Allow the right section to shrink */
+    }
+
+    
+}

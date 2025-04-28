@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="editProfile.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Donor Dashboard</h2>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html">Overview</a></li>
+                <li><a href="editProfile.html" class="active">Edit Profile</a></li>
+                <li><a href="DonationHistory.html">Donation History</a></li>
+                <!-- <li><a href="#">Notifications</a></li> -->
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Edit Profile</h1>
+                <p>Update your personal details and donation preferences.</p>
+            </header>
+
+            <section class="form-section">
+                <form id="editProfileForm" class="profile-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="phone">Contact Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your contact number">
+
+                    <label for="blood-group">Blood Group:</label>
+                    <input type="text" id="blood-group" name="blood-group" placeholder="Enter your blood group">
+
+                    <label for="preferred-areas">Preferred Areas for Donation:</label>
+                    <input type="text" id="preferred-areas" name="preferred-areas" placeholder="Enter your preferred donation areas">
+
+                    <button type="submit">Update Profile</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="edit-profile.js"></script>
+</body>
+</html>

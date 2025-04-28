@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project RBC - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="logo">Project RBC</a>
+            </div>
+            <div class="nav-right">
+                <a href="donor.html" class="cta-donor-btn">Be a Donor</a>
+                <a href="login.html" class="login-btn">Login</a>
+                <!-- <a href="guest.html" class="guest-btn">Guest User</a> -->
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Save Lives, Be a Hero</h1>
+            <p>Join our community of life-savers. Donate blood, make a difference.</p>
+            <a href="donorlist.html" class="cta-btn">See Requests</a>
+        </div>
+    </section>
+
+    <section id="request" class="request-blood-form">
+        <h2>Request Blood</h2>
+        <form id="requestForm" class="donor-search-form">
+            <label for="bloodGroup">Blood Group:</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="requesterName">Your Name:</label>
+            <input type="text" id="requesterName" name="requesterName" placeholder="Enter your name" required>
+
+            <label for="requesterContact">Contact Info:</label>
+            <input type="text" id="requesterContact" name="requesterContact" placeholder="Enter your contact number" required>
+
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="" disabled selected>Select District</option>
+                <option value="Bagerhat">Bagerhat</option>
+                <option value="Bandarban">Bandarban</option>
+                <option value="Barguna">Barguna</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Bhola">Bhola</option>
+                <option value="Bogra">Bogra</option>
+                <option value="Brahmanbaria">Brahmanbaria</option>
+                <option value="Chandpur">Chandpur</option>
+                <option value="Chapai Nawabganj">Chapai Nawabganj</option>
+                <option value="Chattogram">Chattogram</option>
+                <option value="Chuadanga">Chuadanga</option>
+                <option value="Cox's Bazar">Cox's Bazar</option>
+                <option value="Cumilla">Cumilla</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Dinajpur">Dinajpur</option>
+                <option value="Faridpur">Faridpur</option>
+                <option value="Feni">Feni</option>
+                <option value="Gaibandha">Gaibandha</option>
+                <option value="Gazipur">Gazipur</option>
+                <option value="Gopalganj">Gopalganj</option>
+                <option value="Habiganj">Habiganj</option>
+                <option value="Jamalpur">Jamalpur</option>
+                <option value="Jashore">Jashore</option>
+                <option value="Jhalokati">Jhalokati</option>
+                <option value="Jhenaidah">Jhenaidah</option>
+                <option value="Joypurhat">Joypurhat</option>
+                <option value="Khagrachari">Khagrachari</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Kishoreganj">Kishoreganj</option>
+                <option value="Kurigram">Kurigram</option>
+                <option value="Kushtia">Kushtia</option>
+                <option value="Lakshmipur">Lakshmipur</option>
+                <option value="Lalmonirhat">Lalmonirhat</option>
+                <option value="Madaripur">Madaripur</option>
+                <option value="Magura">Magura</option>
+                <option value="Manikganj">Manikganj</option>
+                <option value="Meherpur">Meherpur</option>
+                <option value="Moulvibazar">Moulvibazar</option>
+                <option value="Munshiganj">Munshiganj</option>
+                <option value="Mymensingh">Mymensingh</option>
+                <option value="Naogaon">Naogaon</option>
+                <option value="Narail">Narail</option>
+                <option value="Narayanganj">Narayanganj</option>
+                <option value="Narsingdi">Narsingdi</option>
+                <option value="Natore">Natore</option>
+                <option value="Netrokona">Netrokona</option>
+                <option value="Nilphamari">Nilphamari</option>
+                <option value="Noakhali">Noakhali</option>
+                <option value="Pabna">Pabna</option>
+                <option value="Panchagarh">Panchagarh</option>
+                <option value="Patuakhali">Patuakhali</option>
+                <option value="Pirojpur">Pirojpur</option>
+                <option value="Rajbari">Rajbari</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Rangamati">Rangamati</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Satkhira">Satkhira</option>
+                <option value="Shariatpur">Shariatpur</option>
+                <option value="Sherpur">Sherpur</option>
+                <option value="Sirajganj">Sirajganj</option>
+                <option value="Sunamganj">Sunamganj</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Tangail">Tangail</option>
+                <option value="Thakurgaon">Thakurgaon</option>
+            </select>
+
+            <label for="policeStation">Police Station:</label>
+            <input type="text" id="policeStation" name="policeStation" placeholder="Enter your police station" required>
+
+            <label for="reason">Reason for Blood Request:</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Explain the reason for your request" required></textarea>
+
+            <!-- <label for="password">Set a Password:</label>
+            <input type="password" id="password" name="password" placeholder="Set a password" required> -->
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Project RBC. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

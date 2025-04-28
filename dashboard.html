@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Donor Dashboard</h2>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="editProfile.html">Edit Profile</a></li>
+                <li><a href="DonationHistory.html">Donation History</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <h1>Welcome</h1>
+                <p>Stay updated with your donation activity and profile information.</p>
+            </header>
+
+            
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-card">
+                    <h3>Total Donations</h3>
+                    <p id="totalDonations">0</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Last Donation</h3>
+                    <p id="lastDonation">N/A</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Available Requests</h3>
+                    <p id="pendingRequests">0</p>
+                </div>
+            </section>
+  
+
+
+            <!-- Activity Section -->
+            <h1>Blood Requests Dashboard</h1>
+            <div id="dashboardBloodRequests"></div>
+
+              
+    
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
